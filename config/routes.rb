@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :clients
   # resources :phones 
   match '/phones', to: 'phones#allot_number', via: 'post'
   match '/phones', to: 'phones#allotted_numbers', via: 'get'
